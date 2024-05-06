@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- ImageView for the pet -->
+    <ImageView
+        android:id="@+id/imageViewPetAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="pet_action_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pet_image2" />
+
+    <!-- Action buttons in a horizontal LinearLayout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewPetAction"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/buttonFeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feed"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clean"
+            android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="play" />
+    </LinearLayout>
+
+    <!-- Status values -->
+    <TextView
+        android:id="@+id/textViewHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hunger"
+        android:layout_below="@id/imageViewPetAction"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/textViewHunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clean"
+        android:layout_below="@id/textViewHealth"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewCleanliness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Happy"
+        android:layout_below="@id/textViewHunger"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
